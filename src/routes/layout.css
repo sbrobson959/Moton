@@ -1,0 +1,173 @@
+/* src/layouts.css */
+@import 'tailwindcss';
+
+/* Define custom font families */
+@font-face {
+  font-family: 'Graebenbach';
+  src: url('/fonts/Graebenbach-Black-Italic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graebenbach';
+  src: url('/fonts/Graebenbach-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graebenbach';
+  src: url('/fonts/Graebenbach-Bold-Italic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graebenbach';
+  src: url('/fonts/Graebenbach-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graebenbach';
+  src: url('/fonts/Graebenbach-Medium-Italic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graebenbach';
+  src: url('/fonts/Graebenbach-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graebenbach';
+  src: url('/fonts/Graebenbach-Regular-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graebenbach';
+  src: url('/fonts/Graebenbach-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graebenbach-Mono';
+  src: url('/fonts/Graebenbach-Mono-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graebenbach-Mono';
+  src: url('/fonts/Graebenbach-Mono-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graebenbach-Mono';
+  src: url('/fonts/Graebenbach-Mono-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graebenbach-Mono';
+  src: url('/fonts/Graebenbach-Mono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TheNeue';
+  src: url('/fonts/TheNeue-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@plugin '@tailwindcss/typography';
+
+/* Extend Tailwind with custom font families */
+@layer base {
+  body {
+    font-family: 'Graebenbach', system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'TheNeue', 'Graebenbach', system-ui, sans-serif;
+  }
+
+  .font-graebenbach {
+    font-family: 'Graebenbach', system-ui, sans-serif;
+  }
+
+  .font-graebenbach-mono {
+    font-family: 'Graebenbach-Mono', monospace;
+  }
+
+  .font-the-neue {
+    font-family: 'TheNeue', system-ui, sans-serif;
+  }
+
+  .font-graebenbach-black {
+    font-family: 'Graebenbach', system-ui, sans-serif;
+    font-weight: 900;
+  }
+
+  .font-graebenbach-bold {
+    font-family: 'Graebenbach', system-ui, sans-serif;
+    font-weight: bold;
+  }
+
+  .font-graebenbach-medium {
+    font-family: 'Graebenbach', system-ui, sans-serif;
+    font-weight: 500;
+  }
+
+  .font-graebenbach-italic {
+    font-family: 'Graebenbach', system-ui, sans-serif;
+    font-style: italic;
+  }
+}
+
+@theme {
+  --color-tcf-red: #d63434;
+  --color-tcf-light-gray: #eeeeee;
+  --color-tcf-bg-gray: #191416;
+  --color-tcf-bg-dark-gray: #120b0c;
+  --color-tcf-bg-dark-red: #12070a;
+  --color-tcf-light-green: #a4ad83;
+  --color-tcf-medium-green: #4c563a;
+  --color-tcf-dark-green: #1f2119;
+  --color-tcf-maroon: #421f1f;
+  --color-tcf-medium-pink: #d88b8b;
+  --color-tcf-medium-gray: #847674;
+  --color-tcf-light-pink: #fff5f5;
+  --color-input-gray: #1a1718;
+}
