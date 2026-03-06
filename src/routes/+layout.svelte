@@ -10,7 +10,8 @@
 		['Home', '/'],
 		['Frequently Asked Questions', '/faq'],
 		['Take the Neighborhood Conditions Survey', '/survey'],
-		['Apply for the Community Advisory Board', '/cab']
+		['Apply for the Community Advisory Board', '/cab'],
+		['View the Site Analysis', '/analysis']
 	];
 </script>
 
