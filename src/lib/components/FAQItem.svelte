@@ -45,10 +45,3 @@
 		{/if}
 	</div>
 </div>
-
-<style>
-	/* Ensure the button font matches your site's font stack */
-	button {
-		font-family: inherit;
-	}
-</style>
