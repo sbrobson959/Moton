@@ -39,7 +39,7 @@
 		{
 			question: 'What kind of stores or businesses could be on the site?',
 			answer:
-				"The site will feature food options, neighborhood services, and small local businesses rather than big chains or a nightlife district. These choices are intended to leverage North Tulsa's existing spending power and ensure that money stays within the community."
+				"The site could feature food options, neighborhood services, and small local businesses rather than big chains or a nightlife district. These choices are intended to leverage North Tulsa's existing spending power and ensure that money stays within the community."
 		},
 		{
 			question: 'How will the history of Moton Hospital and Greenwood be respected?',
