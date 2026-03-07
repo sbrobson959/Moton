@@ -1,5 +1,3 @@
-<script src="https://server.fillout.com/embed/v1/"></script>
-
 <!-- Inside src/routes/+layout.svelte -->
 <svelte:head>
 	<script src="https://server.fillout.com/embed/v1/" type="text/javascript"></script>
