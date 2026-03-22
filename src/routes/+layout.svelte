@@ -1,4 +1,5 @@
 <script>
+	import * as Tooltip from '$lib/components/ui/tooltip/index.js';
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import { ArrowRight } from '@lucide/svelte';
@@ -10,7 +11,8 @@
 		['Home', '/'],
 		['Frequently Asked Questions', '/faq'],
 		['Take the Neighborhood Conditions Survey', '/survey'],
-		['View the Site Analysis', '/analysis']
+		['View the Site Analysis', '/analysis'],
+		['View the Community Engagement Report', '/report']
 	];
 </script>
 
@@ -18,7 +20,7 @@
 
 <div class="w-full bg-tcf-bg-dark-gray px-8 pb-8 shadow-lg">
 	<div class="mx-auto max-w-4xl">
-		<div class="flex max-w-120 gap-5 border py-5">
+		<div class="flex max-w-110 gap-5 border py-5">
 			<div class="flex flex-1 items-center">
 				<img src="/logos/svg/Horizontal Color Light Pink.svg" alt="TCF logo" />
 			</div>
@@ -29,8 +31,8 @@
 				<img src="/kb light.png" alt="KB Advisors logo" />
 			</div>
 		</div>
-		<h1 class="font-graebenbach-black text-5xl text-white">Dreaming Forward Together</h1>
-		<h2 class="font-graebenbach-bold pt-2 text-4xl text-zinc-200">The Future of the Moton Site</h2>
+		<h1 class="font-graebenbach-black text-4xl text-white">Dreaming Forward Together</h1>
+		<h2 class="font-graebenbach-bold pt-2 text-3xl text-zinc-200">The Future of the Moton Site</h2>
 		<div class="mt-5 ml-2 flex flex-col gap-1.5">
 			{#each PAGES as [label, url]}
 				{#if $page.url.pathname !== url}
@@ -47,5 +49,7 @@
 </div>
 
 <div class="px-10 py-5">
-	{@render children()}
+	<Tooltip.Provider>
+		{@render children()}
+	</Tooltip.Provider>
 </div>
