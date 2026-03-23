@@ -3,6 +3,6 @@
 		Help us reimagine what North Tulsa could look like.
 	</h2>
 	<div class=" overflow-hidden rounded-xl">
-		<img src="moton 3d.png" alt="Moton Site Map" />
+		<img src="moton 3d.webp" alt="Moton Site Map" />
 	</div>
 </div>
