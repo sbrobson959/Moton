@@ -1,13 +1,13 @@
 <script>
-	import * as Tooltip from '$lib/components/ui/tooltip/index.js';
+	import * as Popover from '$lib/components/ui/popover/index.js';
 
 	let {
 		votes = {
-			stronglyDisagree: 10,
-			disagree: 10,
-			neutral: 10,
-			agree: 10,
-			stronglyAgree: 10
+			stronglyDisagree: 0,
+			disagree: 0,
+			neutral: 0,
+			agree: 0,
+			stronglyAgree: 0
 		},
 		classes = ''
 	} = $props();
@@ -21,59 +21,87 @@
 
 <div class={`flex h-10 overflow-hidden rounded ${classes}`}>
 	<!-- Strongly Disagree -->
-	<Tooltip.Root>
-		<Tooltip.Trigger class="bg-tcf-red" style="width: {widths['stronglyDisagree']}%" title=""
-		></Tooltip.Trigger>
-		<Tooltip.Content side="bottom">
+	<Popover.Root>
+		<Popover.Trigger
+			openOnHover
+			closeDelay="0"
+			openDelay="0"
+			class="bg-tcf-red"
+			style="width: {widths['stronglyDisagree']}%"
+		></Popover.Trigger>
+		<Popover.Content side="bottom" class="w-fit p-2">
 			<p>
-				<strong>Strongly Disagree:</strong><br />
+				<strong>Strongly Disagree:</strong>
 				{votes.stronglyDisagree} votes ({((votes.stronglyDisagree / total) * 100).toFixed(2)}%)
 			</p>
-		</Tooltip.Content>
-	</Tooltip.Root>
+		</Popover.Content>
+	</Popover.Root>
 
 	<!-- Disagree -->
-	<Tooltip.Root>
-		<Tooltip.Trigger class="bg-red-300" style="width: {widths['disagree']}%"></Tooltip.Trigger>
-		<Tooltip.Content side="bottom">
+	<Popover.Root>
+		<Popover.Trigger
+			openOnHover
+			closeDelay="0"
+			openDelay="0"
+			class="bg-red-300"
+			style="width: {widths['disagree']}%"
+		></Popover.Trigger>
+		<Popover.Content side="bottom" class="w-fit p-2">
 			<p>
-				<strong>Disagree:</strong><br />
+				<strong>Disagree:</strong>
 				{votes.disagree} votes ({((votes.disagree / total) * 100).toFixed(2)}%)
 			</p>
-		</Tooltip.Content>
-	</Tooltip.Root>
+		</Popover.Content>
+	</Popover.Root>
 
 	<!-- Neutral -->
-	<Tooltip.Root>
-		<Tooltip.Trigger class="bg-yellow-400" style="width: {widths['neutral']}%"></Tooltip.Trigger>
-		<Tooltip.Content side="bottom">
+	<Popover.Root>
+		<Popover.Trigger
+			openOnHover
+			closeDelay="0"
+			openDelay="0"
+			class="bg-yellow-400"
+			style="width: {widths['neutral']}%"
+		></Popover.Trigger>
+		<Popover.Content side="bottom" class="w-fit p-2">
 			<p>
-				<strong>Neutral:</strong><br />
+				<strong>Neutral:</strong>
 				{votes.neutral} votes ({((votes.neutral / total) * 100).toFixed(2)}%)
 			</p>
-		</Tooltip.Content>
-	</Tooltip.Root>
+		</Popover.Content>
+	</Popover.Root>
 
 	<!-- Agree -->
-	<Tooltip.Root>
-		<Tooltip.Trigger class="bg-emerald-500" style="width: {widths['agree']}%"></Tooltip.Trigger>
-		<Tooltip.Content side="bottom">
+	<Popover.Root>
+		<Popover.Trigger
+			openOnHover
+			closeDelay="0"
+			openDelay="0"
+			class="bg-emerald-500"
+			style="width: {widths['agree']}%"
+		></Popover.Trigger>
+		<Popover.Content side="bottom" class="w-fit p-2">
 			<p>
-				<strong>Agree:</strong><br />
+				<strong>Agree:</strong>
 				{votes.agree} votes ({((votes.agree / total) * 100).toFixed(2)}%)
 			</p>
-		</Tooltip.Content>
-	</Tooltip.Root>
+		</Popover.Content>
+	</Popover.Root>
 
 	<!-- Strongly Agree -->
-	<Tooltip.Root>
-		<Tooltip.Trigger class="bg-emerald-800" style="width: {widths['stronglyAgree']}%"
-		></Tooltip.Trigger>
-		<Tooltip.Content side="bottom">
+	<Popover.Root>
+		<Popover.Trigger
+			openOnHover
+			closeDelay="0"
+			openDelay="0"
+			class="bg-emerald-800"
+			style="width: {widths['stronglyAgree']}%"
+		></Popover.Trigger>
+		<Popover.Content side="bottom" class="w-fit p-2">
 			<p>
-				<strong>Strongly Agree:</strong><br />
+				<strong>Strongly Agree:</strong>
 				{votes.stronglyAgree} votes ({((votes.stronglyAgree / total) * 100).toFixed(2)}%)
 			</p>
-		</Tooltip.Content>
-	</Tooltip.Root>
+		</Popover.Content>
+	</Popover.Root>
 </div>

@@ -1,5 +1,4 @@
 <script>
-	import * as Tooltip from '$lib/components/ui/tooltip/index.js';
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import { ArrowRight } from '@lucide/svelte';
@@ -49,7 +48,5 @@
 </div>
 
 <div class="px-10 py-5">
-	<Tooltip.Provider>
-		{@render children()}
-	</Tooltip.Provider>
+	{@render children()}
 </div>
