@@ -11,7 +11,8 @@
 		['Frequently Asked Questions', '/faq'],
 		['Take the Neighborhood Conditions Survey', '/survey'],
 		['View the Site Analysis', '/analysis'],
-		['View the Community Engagement Report', '/report']
+		['View the Community Engagement Report', '/report'],
+		['Meet the Community Advisory Board', '/cab']
 	];
 </script>
 
